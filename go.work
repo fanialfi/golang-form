@@ -1,0 +1,9 @@
+go 1.20
+
+use (
+	./ajax-json-payload
+	./ajax-json-response
+	./ajax-multiple-file-upload
+	./golang-form-upload-file
+	./golang-form-value
+)

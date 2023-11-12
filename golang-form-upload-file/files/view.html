@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Message</title>
+</head>
+<body>
+  {{/* enctype="multipart/form-data" ditambahkan agar http request mendukung upload file */}}
+  <form action="/process" method="post" enctype="multipart/form-data">
+    <label for="file">the file :</label>
+    <input type="file" name="file" id="file"><br>
+
+    <label for="alias">rename to :</label>
+    <input type="text" name="alias" id="alias"><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
